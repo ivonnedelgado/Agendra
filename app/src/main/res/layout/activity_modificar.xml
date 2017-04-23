@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.ivonne.agenda.Modificar">
+
+    <Button
+        android:id="@+id/bCam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="75dp"
+        android:text="Cambiar"
+        android:onClick="modificarInfo"
+        android:layout_below="@+id/ediNum"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/ediNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ediNum" />
+
+    <EditText
+        android:id="@+id/ediNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Numero"
+        android:layout_alignTop="@+id/ediNombre"
+        android:layout_alignEnd="@+id/bCam" />
+</RelativeLayout>
